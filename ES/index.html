@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RACAILLE | Desarrollo de Software</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <h1 class="logo">RACAILLE</h1>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu">
+                <div class="nav-menu-wrapper">
+                    <ul class="nav-links">
+                        <li><a href="#about">Manifiesto</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                    <div class="lang-switcher">
+                        <button class="lang-btn" onclick="setLang('US')">US</button>
+                        <button class="lang-btn active" onclick="setLang('ES')">ES</button>
+                        <button class="lang-btn" onclick="setLang('JP')">JP</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h2>DESARROLLO DE SOFTWARE<br><span class="highlight">QUE ROMPE MOLDES</span></h2>
+            <p>Ingeniería de software para empresas ambiciosas. Construimos lo que otros no se atreven.</p>
+            <a href="#contact" class="btn">Hablemos</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">HONESTIDAD RADICAL</h2>
+            <div class="about-content">
+                <p class="section-text">
+                    Soy <strong>Jairo Castro</strong>, desarrollador Full Stack. Fundé <strong>RACAILLE</strong> con una misión clara: eliminar la burocracia del desarrollo de software.
+                </p>
+                <p class="section-text">
+                    Sin intermediarios innecesarios, sin promesas vacías. Solo código limpio, arquitecturas robustas y resultados que hablan por sí mismos. Tu marca no es convencional, tu tecnología tampoco debería serlo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title">ARSENAL</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>ERP Development</h3>
+                    <p>Sistemas a medida que optimizan flujos reales, no teóricos. Eficiencia brutal para tu negocio.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Ciberseguridad</h3>
+                    <p>Auditorías y defensa activa. Protegemos tus activos digitales de amenazas reales.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Software A Medida</h3>
+                    <p>Desde plataformas web complejas hasta apps móviles. Si puedes imaginarlo, podemos codificarlo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">CONTACTO</h2>
+            <p class="section-subtitle">Cuéntanos tu proyecto. Sin rodeos.</p>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>RACAILLE LLC</h3>
+                    <p><strong>Ubicación:</strong><br>Bronx, NY 10468-4914</p>
+                    <p><strong>Teléfono:</strong><br>+1 646 261 6526</p>
+                    <p><strong>Email:</strong><br>contacto@racaille.space</p>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" action="mailto:contacto@racaille.space" method="POST" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name">NOMBRE</label>
+                            <input type="text" id="name" name="name" required placeholder="Tu Nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">PROYECTO</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="¿Qué quieres construir?"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">ENVIAR MENSAJE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 RACAILLE LLC. Built distinct.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Set language cookie and redirect
+        function setLang(lang) {
+            document.cookie = "racaille_lang=" + lang + "; path=/; max-age=31536000"; // 1 year
+            window.location.href = "../" + lang + "/";
+        }
+
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-menu').classList.remove('active');
+                document.querySelector('.menu-toggle').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

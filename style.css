@@ -6,8 +6,8 @@
     --text-muted: #888;
     --accent-color: #CCFF00; /* Acid Green */
     --accent-hover: #b3e600;
-    --font-heading: 'Montserrat', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-heading: 'Montserrat', 'Noto Sans JP', sans-serif;
+    --font-body: 'Inter', 'Noto Sans JP', sans-serif;
     --border-color: #333;
 }
 
@@ -71,6 +71,12 @@ ul {
     text-transform: uppercase;
 }
 
+.nav-menu-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 .nav-links {
     display: flex;
     gap: 40px;
@@ -87,6 +93,34 @@ ul {
 
 .nav-links a:hover {
     color: var(--accent-color);
+}
+
+/* Language Switcher */
+.lang-switcher {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+    border-left: 1px solid var(--border-color);
+    padding-left: 20px;
+}
+
+.lang-btn {
+    background: none;
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover, .lang-btn.active {
+    color: var(--bg-color);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 /* Mobile Menu Toggle */
@@ -400,6 +434,13 @@ footer {
         transform: translateY(0);
     }
 
+    .nav-menu-wrapper {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+    }
+
     .nav-links {
         flex-direction: column;
         align-items: center;
@@ -408,6 +449,22 @@ footer {
 
     .nav-links a {
         font-size: 1.2rem;
+    }
+
+    .lang-switcher {
+        margin-left: 0;
+        border-left: none;
+        padding-left: 0;
+        margin-top: 20px;
+        border-top: 1px solid var(--border-color);
+        padding-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .lang-btn {
+        font-size: 1rem;
+        padding: 8px 16px;
     }
 
     /* Menu Toggle Animation */
@@ -420,7 +477,7 @@ footer {
     .menu-toggle.active span:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -6px);
     }
-    
+
     .hero h2 {
         font-size: 2.5rem;
     }
