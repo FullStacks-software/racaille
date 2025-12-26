@@ -316,6 +316,65 @@ ul {
     color: var(--text-muted);
 }
 
+/* Solutions Section (Pain Points) */
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.solution-card {
+    background: var(--card-bg);
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+.solution-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.solution-card p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin-bottom: 30px;
+    flex-grow: 1; /* Pushes button to bottom */
+}
+
+.btn-small {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: transparent;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 100%;
+}
+
+.btn-small:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
 /* Contact */
 .contact-section {
     background-color: var(--card-bg);
