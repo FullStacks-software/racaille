@@ -603,8 +603,9 @@ footer {
     transition: all 0.3s ease;
 }
 
-/* Mostrar opciones al pasar el mouse por todo el widget */
-.racaille-chat-widget:hover .chat-options {
+/* Mostrar opciones al pasar el mouse por todo el widget (Desktop) o con clase active (Mobile) */
+.racaille-chat-widget:hover .chat-options,
+.racaille-chat-widget.active .chat-options {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);

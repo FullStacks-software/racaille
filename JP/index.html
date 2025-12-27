@@ -180,6 +180,22 @@
                 document.querySelector('.menu-toggle').classList.remove('active');
             });
         });
+
+        // Chat Widget Mobile Toggle
+        const chatWidget = document.querySelector('.racaille-chat-widget');
+        const chatTrigger = document.querySelector('.chat-trigger');
+
+        chatTrigger.addEventListener('click', function(e) {
+            e.stopPropagation(); // Prevent closing immediately
+            chatWidget.classList.toggle('active');
+        });
+
+        // Close chat when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!chatWidget.contains(e.target)) {
+                chatWidget.classList.remove('active');
+            }
+        });
     </script>
 </body>
 </html>
