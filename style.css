@@ -557,3 +557,77 @@ footer {
         font-size: 2rem;
     }
 }
+
+/* Widget Flotante RACAILLE */
+.racaille-chat-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column-reverse; /* Hace que se desplieguen hacia arriba */
+    align-items: center;
+    gap: 10px;
+}
+
+/* El botón principal */
+.chat-trigger {
+    width: 60px;
+    height: 60px;
+    background-color: #000000; /* Negro Puro */
+    border: 2px solid var(--accent-color); /* Verde Neón RACAILLE */
+    border-radius: 50%;
+    color: var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(204, 255, 0, 0.4); /* Resplandor verde */
+    transition: all 0.3s ease;
+}
+
+.chat-trigger:hover {
+    transform: scale(1.1);
+    background-color: var(--accent-color);
+    color: #000; /* Invierte colores al hover */
+}
+
+/* Contenedor de opciones (Oculto inicialmente) */
+.chat-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+/* Mostrar opciones al pasar el mouse por todo el widget */
+.racaille-chat-widget:hover .chat-options {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Botones individuales (Messenger/Insta) */
+.chat-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #1a1a1a; /* Gris oscuro */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.2s;
+    border: 1px solid #333;
+}
+
+.chat-btn:hover {
+    transform: scale(1.1);
+}
+
+.messenger:hover { background: #0084FF; border-color: #0084FF; }
+.instagram:hover { background: #E1306C; border-color: #E1306C; }
