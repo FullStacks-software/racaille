@@ -633,3 +633,73 @@ footer {
 .messenger:hover { background: #0084FF; border-color: #0084FF; }
 .instagram:hover { background: #E1306C; border-color: #E1306C; }
 .whatsapp:hover { background: #25D366; border-color: #25D366; }
+
+/* FAQ Styles */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-category {
+    margin-bottom: 40px;
+}
+
+.faq-category h3 {
+    font-family: var(--font-heading);
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 20px 0;
+    text-align: left;
+    color: var(--text-color);
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover, .faq-question.active {
+    color: var(--accent-color);
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 1.5rem;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active::after {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding-right: 20px;
+}
+
+.faq-answer p {
+    padding-bottom: 20px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
