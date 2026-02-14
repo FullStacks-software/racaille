@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RACAILLE | FAQ</title>
+    <link rel="icon" type="image/png" href="../assets/images/favicon-bg.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo-container">
+                <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 15px;">
+                    <img src="../assets/images/racaille-logo.png" alt="Racaille Logo" class="logo-img">
+                    <h1 class="logo-text">RACAILLE</h1>
+                </a>
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu">
+                <div class="nav-menu-wrapper">
+                    <ul class="nav-links">
+                        <li><a href="index.html#about">Manifiesto</a></li>
+                        <li><a href="index.html#services">Arsenal</a></li>
+                        <li><a href="index.html#portfolio">Portafolio</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                        <li><a href="faq.html" class="active">FAQ</a></li>
+                    </ul>
+                    <div class="lang-switcher">
+                        <button class="lang-btn" onclick="setLang('US')">US</button>
+                        <button class="lang-btn active" onclick="setLang('ES')">ES</button>
+                        <button class="lang-btn" onclick="setLang('JP')">JP</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="faq" class="section faq-section">
+        <div class="container">
+            <h2 class="section-title">PREGUNTAS FRECUENTES</h2>
+            <div class="faq-container">
+
+                <div class="faq-category">
+                    <h3>Información General</h3>
+
+                    <div class="faq-item">
+                        <button class="faq-question">¿Qué es Racaille LLC?</button>
+                        <div class="faq-answer">
+                            <p>Racaille LLC es una empresa de tecnología legalmente constituida en Estados Unidos, especializada en desarrollo de software a medida, soluciones de ciberseguridad y automatización de procesos para empresas y particulares.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">¿Dónde están ubicados?</button>
+                        <div class="faq-answer">
+                            <p>Nuestra sede legal se encuentra en el estado de Nueva York, Estados Unidos, pero operamos de manera global ofreciendo servicios remotos a clientes de diversos países.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">¿Cuáles son sus principales servicios?</button>
+                        <div class="faq-answer">
+                            <p>Nos especializamos en el desarrollo de sistemas ERP, creación de bots de automatización, auditorías de ciberseguridad, desarrollo web/móvil y soluciones de infraestructura TI.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">¿Trabajan con clientes internacionales?</button>
+                        <div class="faq-answer">
+                            <p>Sí, trabajamos con clientes de todo el mundo. Nuestra infraestructura digital nos permite colaborar eficazmente sin importar la ubicación geográfica del cliente.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">¿Tienen oficinas físicas para visitar?</button>
+                        <div class="faq-answer">
+                            <p>Actualmente operamos bajo un modelo "Digital First" (prioridad digital) para maximizar la eficiencia y reducir costos, por lo que todas las reuniones se realizan mediante videoconferencia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h3>Servicios y Desarrollo</h3>
+
+                    <div class="faq-item">
+                        <button class="faq-question">¿Desarrollan software a la medida?</button>
+                        <div class="faq-answer">
+                            <p>Sí. Analizamos las necesidades específicas de tu negocio para crear soluciones personalizadas que se adapten exactamente a tus flujos de trabajo, en lugar de venderte software genérico.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">¿Qué tipo de seguridad implementan en sus desarrollos?</button>
+                        <div class="faq-answer">
+                            <p>La seguridad es nuestra prioridad. Implementamos las mejores prácticas de la industria, incluyendo encriptación de datos, autenticación de dos factores (2FA) y pruebas de vulnerabilidad en todos nuestros productos.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">¿Cuánto tiempo tarda un proyecto de desarrollo?</button>
+                        <div class="faq-answer">
+                            <p>El tiempo varía según la complejidad. Un bot simple puede tardar unos días, mientras que un sistema empresarial completo puede tomar varias semanas o meses. Siempre entregamos un cronograma estimado antes de iniciar.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">¿Ofrecen soporte después de terminar el proyecto?</button>
+                        <div class="faq-answer">
+                            <p>Sí, ofrecemos planes de mantenimiento y soporte post-lanzamiento para asegurar que tu software siga funcionando correctamente y se actualice según sea necesario.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">¿Pueden mejorar o arreglar un software que ya tengo?</button>
+                        <div class="faq-answer">
+                            <p>Sí. Realizamos auditorías de código y optimización de sistemas existentes para mejorar su rendimiento, seguridad o añadir nuevas funcionalidades.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h3>Contratación y Pagos</h3>
+
+                    <div class="faq-item">
+                        <button class="faq-question">¿Cómo puedo solicitar un presupuesto?</button>
+                        <div class="faq-answer">
+                            <p>Puedes contactarnos directamente a través de nuestro formulario web, correo electrónico o canales oficiales. Necesitaremos una descripción breve de tu proyecto para darte un estimado preciso.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">¿Cuáles son los métodos de pago aceptados?</button>
+                        <div class="faq-answer">
+                            <p>Aceptamos transferencias bancarias internacionales, tarjetas de crédito/débito y ciertas criptomonedas (sujeto a verificación), facilitando las transacciones globales.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">¿Se requiere un pago por adelantado?</button>
+                        <div class="faq-answer">
+                            <p>Generalmente solicitamos un anticipo del 50% al inicio del proyecto para reservar los recursos de desarrollo, y el resto se abona contra entrega o por hitos cumplidos.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">¿Firman acuerdos de confidencialidad (NDA)?</button>
+                        <div class="faq-answer">
+                            <p>Absolutamente. Entendemos el valor de tu propiedad intelectual y estamos dispuestos a firmar un Acuerdo de Confidencialidad (NDA) antes de discutir detalles sensibles de tu proyecto.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">¿Entregan factura fiscal?</button>
+                        <div class="faq-answer">
+                            <p>Sí, como una LLC registrada en EE. UU., emitimos facturas comerciales ("Invoices") válidas internacionalmente para tus registros contables.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h3>Soporte y Garantías</h3>
+
+                    <div class="faq-item">
+                        <button class="faq-question">¿Qué pasa si el software falla después de la entrega?</button>
+                        <div class="faq-answer">
+                            <p>Todos nuestros desarrollos incluyen un periodo de garantía gratuito donde corregimos cualquier error (bug) originado en nuestro código sin costo adicional.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">¿Cómo manejan la privacidad de mis datos?</button>
+                        <div class="faq-answer">
+                            <p>Nos regimos por políticas estrictas de protección de datos. Tu información nunca se comparte con terceros y se almacena en servidores seguros con acceso restringido.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">¿Ofrecen capacitación para usar los sistemas que crean?</button>
+                        <div class="faq-answer">
+                            <p>Sí. Al entregar un proyecto, proporcionamos documentación técnica y, si se requiere, sesiones de capacitación para ti o tu personal.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">¿Cuál es su horario de atención?</button>
+                        <div class="faq-answer">
+                            <p>Nuestro equipo de soporte técnico opera en horario de oficina (EST), pero contamos con monitoreo de sistemas críticos 24/7 para clientes con contratos de mantenimiento activos.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">¿Por qué elegir a Racaille LLC sobre la competencia?</button>
+                        <div class="faq-answer">
+                            <p>Combinamos agilidad técnica con seguridad robusta. No solo escribimos código; entendemos de ciberseguridad y negocios, garantizando que tu inversión sea segura, escalable y rentable.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">CONTACTO</h2>
+            <p class="section-subtitle">¿Aún tienes dudas? Escríbenos.</p>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>RACAILLE LLC</h3>
+                    <p><strong>Ubicación:</strong><br>Bronx, NY 10468-4914</p>
+                    <p><strong>Teléfono:</strong><br>+1 646 261 6526</p>
+                    <p><strong>Email:</strong><br>contacto@racaille.space</p>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" action="mailto:contacto@racaille.space" method="POST" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name">NOMBRE</label>
+                            <input type="text" id="name" name="name" required placeholder="Tu Nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">MENSAJE</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="¿Cómo podemos ayudarte?"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">ENVIAR MENSAJE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 RACAILLE LLC. Built distinct.</p>
+            <div style="margin-top: 20px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;">
+                <a href="terms.html" style="color: var(--text-muted);">Términos y Condiciones</a> |
+                <a href="privacy.html" style="color: var(--text-muted);">Política de Privacidad</a> |
+                <a href="refund.html" style="color: var(--text-muted);">Política de Reembolso</a>
+            </div>
+            <div style="margin-top: 10px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;">
+                <a href="https://www.designrush.com/agency/software-development/us" target="_blank" style="color: var(--text-muted);">Echa un vistazo a nuestro perfil en DesignRush</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="racaille-chat-widget">
+        <div class="chat-trigger">
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        </div>
+
+        <div class="chat-options">
+            <a href="https://m.me/racaille.llc" target="_blank" class="chat-btn messenger" title="Hablemos por Messenger">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.87 1.43 5.43 3.75 7.05V22l3.43-1.88c.91.25 1.87.38 2.82.38 5.52 0 10-4.03 10-9S17.52 2 12 2zm1.14 11.83L10.3 11l-3.24 3.48 3.56-3.83 2.84 2.83 3.24-3.48-3.56 3.83z"/></svg>
+            </a>
+
+            <a href="https://ig.me/m/racaille.llc" target="_blank" class="chat-btn instagram" title="DM en Instagram">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+
+            <a href="https://wa.me/16462616526" target="_blank" class="chat-btn whatsapp" title="Hablemos por WhatsApp">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Set language cookie and redirect
+        function setLang(lang) {
+            document.cookie = "racaille_lang=" + lang + "; path=/; max-age=31536000"; // 1 year
+            window.location.href = "../" + lang + "/";
+        }
+
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-menu').classList.remove('active');
+                document.querySelector('.menu-toggle').classList.remove('active');
+            });
+        });
+
+        // Chat Widget Mobile Toggle
+        const chatWidget = document.querySelector('.racaille-chat-widget');
+        const chatTrigger = document.querySelector('.chat-trigger');
+
+        chatTrigger.addEventListener('click', function(e) {
+            e.stopPropagation(); // Prevent closing immediately
+            chatWidget.classList.toggle('active');
+        });
+
+        // Close chat when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!chatWidget.contains(e.target)) {
+                chatWidget.classList.remove('active');
+            }
+        });
+
+        // Accordion Logic
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const isActive = question.classList.contains('active');
+
+                // Close all other questions
+                document.querySelectorAll('.faq-question').forEach(q => {
+                    q.classList.remove('active');
+                    q.nextElementSibling.style.maxHeight = null;
+                });
+
+                // Toggle current question
+                if (!isActive) {
+                    question.classList.add('active');
+                    question.nextElementSibling.style.maxHeight = question.nextElementSibling.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
